@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Amiri", "Noto Naskh Arabic", serif;
+  --font-body: "Tajawal", "Noto Sans Arabic", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #f8f1e4;
+  color: #2b1b11;
+}
+
+/* شريط تمرير فاخر رفيع */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f0e4cc;
+}
+::-webkit-scrollbar-thumb {
+  background: #c49a3d;
+  border-radius: 999px;
+}
+
+/* إطار تركيز واضح لإمكانية الوصول */
+:focus-visible {
+  outline: 2px solid #c49a3d;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .container-luxury {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[13px] font-semibold tracking-[0.18em] text-gold-500;
+  }
+
+  .divider-seal {
+    @apply relative flex items-center justify-center gap-3 text-gold-400;
+  }
+  .divider-seal::before,
+  .divider-seal::after {
+    content: "";
+    @apply h-px flex-1 bg-gradient-to-l from-transparent via-gold-300/70 to-transparent;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-l from-gold-400 to-gold-500 px-6 py-3 text-sm font-bold text-espresso-900 shadow-gold transition-all duration-300 hover:shadow-lg hover:brightness-110 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-gold-400/60 bg-transparent px-6 py-3 text-sm font-bold text-espresso-800 transition-all duration-300 hover:border-gold-400 hover:bg-gold-50 active:scale-[0.98];
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-espresso-800 px-6 py-3 text-sm font-bold text-sand-100 shadow-lift transition-all duration-300 hover:bg-espresso-700 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .card-luxury {
+    @apply rounded-xl2 border border-gold-200/60 bg-white/70 backdrop-blur-sm;
+  }
+
+  .input-luxury {
+    @apply w-full rounded-xl border border-espresso-200 bg-white px-4 py-3 text-[15px] text-espresso-800 placeholder:text-espresso-300 focus:border-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-200;
+  }
+
+  .label-luxury {
+    @apply mb-1.5 block text-sm font-semibold text-espresso-700;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-gradient-to-l from-gold-300 via-gold-500 to-gold-300 bg-clip-text text-transparent;
+  }
+  .bg-shimmer {
+    background: linear-gradient(
+      100deg,
+      rgba(196, 154, 61, 0.06) 25%,
+      rgba(196, 154, 61, 0.25) 50%,
+      rgba(196, 154, 61, 0.06) 75%
+    );
+    background-size: 200% 100%;
+  }
+}
