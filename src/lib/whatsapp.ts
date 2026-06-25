@@ -1,6 +1,6 @@
 // أداة بناء روابط واتساب للطلب السريع
 // رقم الواتساب التجريبي لمرحلة MVP — استبدله برقم العمل الرسمي عند الإطلاق
-export const STORE_WHATSAPP_NUMBER = "966500000000";
+export const STORE_WHATSAPP_NUMBER = "966508988626";
 
 export interface QuickOrderDetails {
   customerName?: string;
