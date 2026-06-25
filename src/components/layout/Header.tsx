@@ -58,7 +58,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://wa.me/966508988626"
+            href="https://wa.me/966580518814"
             className="hidden items-center gap-1.5 rounded-full border border-gold-300 px-3 py-2 text-sm font-semibold text-espresso-700 transition-colors hover:bg-gold-50 md:flex"
           >
             <Phone size={15} />
@@ -126,7 +126,7 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <a href="https://wa.me/966508988626" className="btn-dark mt-6">
+          <a href="https://wa.me/966580518814" className="btn-dark mt-6">
             <Phone size={16} /> تواصل معنا الآن
           </a>
         </div>

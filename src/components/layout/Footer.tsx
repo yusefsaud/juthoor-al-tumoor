@@ -70,10 +70,10 @@ export function Footer() {
             <h4 className="mb-4 font-display text-sm font-bold text-gold-300">تواصل معنا</h4>
             <ul className="space-y-3 text-sm text-sand-100/75">
               <li className="flex items-center gap-2">
-                <Phone size={15} className="text-gold-400" /> 966 50 000 0000+
+                <Phone size={15} className="text-gold-400" /> 966580518814+
               </li>
               <li className="flex items-center gap-2">
-                <Mail size={15} className="text-gold-400" /> hello@juthoor.sa
+                <Mail size={15} className="text-gold-400" /> متاح عبر واتساب
               </li>
               <li className="flex items-center gap-2">
                 <MapPin size={15} className="text-gold-400" /> الرياض، المملكة العربية السعودية

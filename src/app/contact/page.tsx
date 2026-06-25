@@ -5,10 +5,10 @@ import { ContactForm } from "@/components/contact/ContactForm";
 import { DateClusterMark } from "@/components/ui/DateClusterMark";
 
 const infoCards = [
-  { icon: Phone, title: "اتصل بنا", value: "966 50 000 0000+" },
-  { icon: Mail, title: "البريد الإلكتروني", value: "hello@juthoor.sa" },
+  { icon: Phone, title: "اتصل بنا", value: "966580518814+" },
+  { icon: Mail, title: "البريد الإلكتروني", value: "متاح عبر واتساب" },
   { icon: MapPin, title: "الموقع", value: "الرياض، المملكة العربية السعودية" },
-  { icon: Clock, title: "ساعات العمل", value: "يوميًا من 9 صباحًا - 11 مساءً" },
+  { icon: Clock, title: "ساعات العمل", value: "يوميًا من 9 صباحًا - 11 مساءً" }, 
 ];
 
 export const metadata = {
