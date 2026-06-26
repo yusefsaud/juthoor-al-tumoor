@@ -29,7 +29,7 @@ export function Header() {
       </div>
 
       <div className="container-luxury flex h-[72px] items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2.5 shrink-0">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5">
           <DateClusterMark className="h-9 w-9 text-gold-500" strokeWidth={1.6} />
           <div className="flex flex-col leading-tight">
             <span className="font-display text-lg font-bold text-espresso-800">مِذواق</span>
@@ -40,6 +40,7 @@ export function Header() {
         <nav className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => {
             const active = pathname === link.href;
+
             return (
               <Link
                 key={link.href}
@@ -64,6 +65,7 @@ export function Header() {
             <Phone size={15} />
             تواصل
           </a>
+
           <Link
             href="/cart"
             className="relative flex h-11 w-11 items-center justify-center rounded-full border border-gold-300 text-espresso-700 transition-colors hover:bg-gold-50"
@@ -76,6 +78,7 @@ export function Header() {
               </span>
             )}
           </Link>
+
           <button
             onClick={() => setOpen(true)}
             className="flex h-11 w-11 items-center justify-center rounded-full border border-gold-300 text-espresso-700 lg:hidden"
@@ -93,45 +96,61 @@ export function Header() {
         }`}
       >
         <div
-          className="absolute inset-0 bg-espresso-900/50"
+          className="absolute inset-0 bg-espresso-900/60"
           onClick={() => setOpen(false)}
         />
+
         <div
-          className={`absolute inset-y-0 right-0 flex w-[82%] max-w-sm flex-col bg-sand-50 p-6 shadow-2xl transition-transform duration-300 ${
+          className={`absolute inset-y-0 right-0 flex w-[86%] max-w-sm flex-col bg-white p-6 shadow-2xl ring-1 ring-espresso-900/10 transition-transform duration-300 ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <div className="mb-8 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <DateClusterMark className="h-7 w-7 text-gold-500" />
-              <span className="font-display text-base font-bold text-espresso-800">مِذواق</span>
+              <div className="flex flex-col leading-tight">
+                <span className="font-display text-base font-bold text-espresso-900">مِذواق</span>
+                <span className="text-[10px] font-semibold tracking-wide text-gold-600">
+                  MITHWAQ DATES
+                </span>
+              </div>
             </div>
-            <button onClick={() => setOpen(false)} aria-label="إغلاق">
-              <X size={22} className="text-espresso-600" />
+
+            <button
+              onClick={() => setOpen(false)}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-sand-100 text-espresso-800"
+              aria-label="إغلاق"
+            >
+              <X size={22} />
             </button>
           </div>
-          <nav className="flex flex-col gap-1">
+
+          <nav className="flex flex-col gap-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className={`rounded-xl px-4 py-3 text-[15px] font-semibold transition-colors ${
+                className={`rounded-xl border px-4 py-4 text-[16px] font-bold shadow-sm transition-colors ${
                   pathname === link.href
-                    ? "bg-gold-400/20 text-espresso-800"
-                    : "text-espresso-600 hover:bg-gold-100"
+                    ? "border-gold-400 bg-gold-100 text-espresso-900"
+                    : "border-gold-100 bg-white text-espresso-900 hover:border-gold-300 hover:bg-gold-50"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
           </nav>
-          <a href="https://wa.me/966580518814" className="btn-dark mt-6">
-            <Phone size={16} /> تواصل معنا الآن
+
+          <a
+            href="https://wa.me/966580518814"
+            className="mt-6 flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-4 text-[16px] font-bold text-white shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <Phone size={18} />
+            تواصل معنا عبر واتساب
           </a>
         </div>
       </div>
     </header>
   );
 }
-
