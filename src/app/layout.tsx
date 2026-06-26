@@ -1,4 +1,5 @@
-﻿import type { Metadata } from "next";
+﻿import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from "next";
 import { CartProvider } from "@/context/CartContext";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="min-h-screen">{children}</main>
           <Footer />
           <WhatsAppFloatingButton />
+<Analytics />
         </CartProvider>
       </body>
     </html>
