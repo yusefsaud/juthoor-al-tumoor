@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { MessageCircle, X } from "lucide-react";
@@ -41,3 +41,4 @@ export function WhatsAppFloatingButton() {
     </>
   );
 }
+

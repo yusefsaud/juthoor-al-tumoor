@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Instagram, Twitter, MessageCircle, MapPin, Phone, Mail } from "lucide-react";
 import { DateClusterMark } from "@/components/ui/DateClusterMark";
 import { Container } from "@/components/ui/Container";
@@ -31,7 +31,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5">
               <DateClusterMark className="h-9 w-9 text-gold-400" />
-              <span className="font-display text-xl font-bold">جذور التمور</span>
+              <span className="font-display text-xl font-bold">مِذواق</span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-7 text-sand-100/70">
               تمور سعودية فاخرة مُنتقاة من أجود المزارع، بتغليف يليق بمناسباتكم
@@ -83,10 +83,11 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-gold-400/15 pt-6 text-xs text-sand-100/50 sm:flex-row">
-          <p>© {new Date().getFullYear()} جذور التمور. جميع الحقوق محفوظة.</p>
+          <p>© {new Date().getFullYear()} مِذواق. جميع الحقوق محفوظة.</p>
           <p>صُنع بفخر سعودي 🇸🇦</p>
         </div>
       </Container>
     </footer>
   );
 }
+

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Sparkles, ArrowLeft } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { DateClusterMark } from "@/components/ui/DateClusterMark";
@@ -33,3 +33,4 @@ export function GiftAssistantBanner() {
     </section>
   );
 }
+

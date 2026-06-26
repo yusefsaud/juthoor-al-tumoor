@@ -1,9 +1,14 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ArrowLeft, ShieldCheck, Truck, Award } from "lucide-react";
 import { DateClusterMark } from "@/components/ui/DateClusterMark";
 import { Container } from "@/components/ui/Container";
+import { buildWhatsAppLink } from "@/lib/whatsapp";
 
 export function Hero() {
+  const whatsappHref = buildWhatsAppLink({
+    notes: "أرغب بطلب تمور من مِذواق",
+  });
+
   return (
     <section className="relative overflow-hidden bg-espresso-800">
       <div className="absolute inset-0 bg-gold-radial" />
@@ -15,31 +20,36 @@ export function Hero() {
         <div className="text-center lg:text-right">
           <span className="eyebrow justify-center lg:justify-start">
             <span className="h-px w-5 bg-gold-400" />
-            تمور سعودية أصيلة، فخامة لا تُجارى
+            مِذواق — تمور سعودية مختارة بعناية
           </span>
+
           <h1 className="mt-5 font-display text-4xl font-bold leading-[1.2] text-sand-50 sm:text-5xl lg:text-[3.4rem]">
-            من نخيل المملكة، إلى{" "}
-            <span className="text-gradient-gold">جذور</span> هداياكم
+            تمور سعودية مختارة بعناية
+            <br />
+            <span className="text-gradient-gold">لمائدتك وضيافتك</span>
           </h1>
+
           <p className="mx-auto mt-5 max-w-md text-base leading-7 text-sand-100/70 lg:mx-0">
-            ننتقي أجود أنواع التمور من مزارع موثوقة في المدينة المنورة والقصيم
-            والأحساء، ونُقدّمها بتغليف فاخر يليق بضيافتكم وهداياكم الخاصة.
+            سكري، خلاص، مجدول وباقات تمور فاخرة مختارة من أجود المزارع،
+            بتغليف أنيق وتوصيل سريع داخل الرياض.
           </p>
+
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row lg:justify-start">
-            <Link href="/products" className="btn-gold w-full sm:w-auto">
-              تسوّق المجموعة
+            <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-gold w-full sm:w-auto">
+              اطلب عبر واتساب
               <ArrowLeft size={16} />
-            </Link>
-            <Link href="/gift-builder" className="btn-outline-gold w-full !border-sand-100/30 !text-sand-50 hover:!bg-sand-50/10 sm:w-auto">
-              صمّم هديتك بنفسك
+            </a>
+
+            <Link href="/products" className="btn-outline-gold w-full !border-sand-100/30 !text-sand-50 hover:!bg-sand-50/10 sm:w-auto">
+              تصفح التمور
             </Link>
           </div>
 
           <div className="mt-10 grid grid-cols-3 gap-3 text-sand-100/80">
             {[
-              { icon: Award, label: "جودة مُصنّفة يدويًا" },
-              { icon: Truck, label: "شحن سريع للمملكة" },
-              { icon: ShieldCheck, label: "ضمان النضارة" },
+              { icon: Award, label: "تمور منتقاة بعناية" },
+              { icon: Truck, label: "توصيل سريع داخل الرياض" },
+              { icon: ShieldCheck, label: "جودة ونضارة مضمونة" },
             ].map((item) => (
               <div key={item.label} className="flex flex-col items-center gap-2 text-center">
                 <item.icon size={20} className="text-gold-400" />

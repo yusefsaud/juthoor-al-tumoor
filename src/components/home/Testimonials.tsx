@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+﻿import { Quote } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RatingStars } from "@/components/ui/RatingStars";
@@ -36,3 +36,4 @@ export function Testimonials() {
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-// أداة بناء روابط واتساب للطلب السريع
+﻿// أداة بناء روابط واتساب للطلب السريع
 // رقم الواتساب التجريبي لمرحلة MVP — استبدله برقم العمل الرسمي عند الإطلاق
 export const STORE_WHATSAPP_NUMBER = "966580518814";
 
@@ -11,7 +11,7 @@ export interface QuickOrderDetails {
 }
 
 export function buildWhatsAppMessage(details: QuickOrderDetails): string {
-  const lines = ["مرحباً جذور التمور 🌴، أرغب بطلب سريع:"];
+  const lines = ["مرحباً مِذواق 🌴، أرغب بطلب سريع:"];
   if (details.productName) {
     lines.push(`المنتج: ${details.productName}`);
   }
@@ -34,3 +34,4 @@ export function buildWhatsAppLink(details: QuickOrderDetails = {}): string {
   const message = buildWhatsAppMessage(details);
   return `https://wa.me/${STORE_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
+

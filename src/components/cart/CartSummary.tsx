@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { ArrowLeft, Tag } from "lucide-react";
@@ -18,7 +18,7 @@ export function CartSummary({ subtotal }: { subtotal: number }) {
 
   function applyPromo() {
     // MVP: كود ترويجي وهمي للتجربة فقط
-    if (promo.trim().toUpperCase() === "JUTHOOR10") {
+    if (promo.trim().toUpperCase() === "MITHWAQ10") {
       const discount = Math.round(subtotal * 0.1);
       setAppliedDiscount(discount);
       setPromoMsg(`تم تطبيق خصم 10% (${formatPrice(discount)})`);
@@ -84,3 +84,6 @@ export function CartSummary({ subtotal }: { subtotal: number }) {
     </div>
   );
 }
+
+
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import {
   createContext,
@@ -24,7 +24,7 @@ interface CartContextValue {
 
 const CartContext = createContext<CartContextValue | undefined>(undefined);
 
-const STORAGE_KEY = "juthoor-cart-v1";
+const STORAGE_KEY = "mithwaq-cart-v1";
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
@@ -116,3 +116,6 @@ export function useCart() {
   if (!ctx) throw new Error("useCart يجب استخدامه داخل CartProvider");
   return ctx;
 }
+
+
+

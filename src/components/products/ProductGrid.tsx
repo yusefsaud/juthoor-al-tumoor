@@ -1,4 +1,4 @@
-import { Product } from "@/data/types";
+﻿import { Product } from "@/data/types";
 import { ProductCard } from "@/components/products/ProductCard";
 
 export function ProductGrid({ products }: { products: Product[] }) {
@@ -23,3 +23,4 @@ export function ProductGrid({ products }: { products: Product[] }) {
     </div>
   );
 }
+

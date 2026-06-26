@@ -1,4 +1,4 @@
-import { Building2, Users, Truck, Palette } from "lucide-react";
+﻿import { Building2, Users, Truck, Palette } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ProductVisual } from "@/components/ui/DateClusterMark";
@@ -15,7 +15,7 @@ const perks = [
 const corporateProducts = products.filter((p) => p.occasions.includes("هدايا شركات"));
 
 export const metadata = {
-  title: "هدايا الشركات | جذور التمور",
+  title: "هدايا الشركات | مِذواق",
 };
 
 export default function CorporateGiftsPage() {
@@ -67,3 +67,4 @@ export default function CorporateGiftsPage() {
     </div>
   );
 }
+

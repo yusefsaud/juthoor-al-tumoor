@@ -1,4 +1,4 @@
-import { Leaf, Heart, Award, Sparkles } from "lucide-react";
+﻿import { Leaf, Heart, Award, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { DateClusterMark } from "@/components/ui/DateClusterMark";
@@ -29,7 +29,7 @@ const journeySteps = [
 ];
 
 export const metadata = {
-  title: "من نحن | جذور التمور",
+  title: "من نحن | مِذواق",
 };
 
 export default function AboutPage() {
@@ -46,7 +46,7 @@ export default function AboutPage() {
             بدأنا من حب التمر السعودي، وانتهينا بصياغة هوية فاخرة له
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-sand-100/70">
-            &quot;جذور التمور&quot; وُلدت من إيمان بسيط: أن التمر السعودي يستحق تقديمًا يوازي
+            &quot;مِذواق&quot; وُلدت من إيمان بسيط: أن التمر السعودي يستحق تقديمًا يوازي
             قيمته الحقيقية — في الجودة، والتغليف، والتجربة الكاملة من المزرعة إلى يدك.
           </p>
         </Container>
@@ -88,3 +88,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-import { Product } from "@/data/types";
+﻿import { Product } from "@/data/types";
 import { ProductCard } from "@/components/products/ProductCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -22,3 +22,4 @@ export function RelatedProducts({
     </section>
   );
 }
+

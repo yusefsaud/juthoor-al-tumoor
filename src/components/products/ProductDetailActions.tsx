@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { Minus, Plus, ShoppingBag, MessageCircle, Check } from "lucide-react";
@@ -61,3 +61,4 @@ export function ProductDetailActions({ product }: { product: Product }) {
     </div>
   );
 }
+

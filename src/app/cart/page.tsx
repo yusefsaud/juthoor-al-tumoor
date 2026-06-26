@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { ShoppingBag, ArrowLeft } from "lucide-react";
@@ -63,3 +63,4 @@ export default function CartPage() {
     </div>
   );
 }
+

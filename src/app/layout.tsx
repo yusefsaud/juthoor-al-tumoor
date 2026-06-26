@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { CartProvider } from "@/context/CartContext";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -6,9 +6,9 @@ import { WhatsAppFloatingButton } from "@/components/layout/WhatsAppFloatingButt
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "جذور التمور | تمور سعودية فاخرة",
+  title: "مِذواق | تمور سعودية فاخرة",
   description:
-    "متجر جذور التمور لبيع أفخر أنواع التمور السعودية: عجوة، سكري، خلاص، مجدول، وصناديق هدايا فاخرة للمناسبات والشركات.",
+    "متجر مِذواق لبيع أفخر أنواع التمور السعودية: عجوة، سكري، خلاص، مجدول، وصناديق هدايا فاخرة للمناسبات والشركات.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -34,3 +34,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+

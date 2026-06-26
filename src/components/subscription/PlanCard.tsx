@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Check, Star } from "lucide-react";
 import { SubscriptionPlan } from "@/data/types";
@@ -66,3 +66,4 @@ export function PlanCard({ plan }: { plan: SubscriptionPlan }) {
     </div>
   );
 }
+

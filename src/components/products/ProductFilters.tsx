@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { DateVariety, Occasion } from "@/data/types";
 import { allVarieties, allOccasions } from "@/data/products";
@@ -137,3 +137,4 @@ export function ProductFilters({
     </div>
   );
 }
+

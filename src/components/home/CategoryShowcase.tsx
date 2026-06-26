@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ProductVisual } from "@/components/ui/DateClusterMark";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -39,3 +39,4 @@ export function CategoryShowcase() {
     </section>
   );
 }
+

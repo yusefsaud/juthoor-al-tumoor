@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+﻿import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -12,7 +12,7 @@ const infoCards = [
 ];
 
 export const metadata = {
-  title: "تواصل معنا | جذور التمور",
+  title: "تواصل معنا | مِذواق",
 };
 
 export default function ContactPage() {
@@ -53,3 +53,4 @@ export default function ContactPage() {
     </div>
   );
 }
+

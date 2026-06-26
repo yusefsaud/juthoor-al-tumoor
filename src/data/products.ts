@@ -1,4 +1,4 @@
-import { GiftBoxOption, Product, SubscriptionPlan, Testimonial } from "./types";
+﻿import { GiftBoxOption, Product, SubscriptionPlan, Testimonial } from "./types";
 
 /**
  * بيانات وهمية لمرحلة MVP.
@@ -172,7 +172,7 @@ export const products: Product[] = [
   {
     id: "p8",
     slug: "royal-gift-box-large",
-    name: "صندوق الجذور الملكي",
+    name: "صندوق مِذواق الملكي",
     variety: "صناديق هدايا",
     occasions: ["عيد", "زواج", "هدايا شركات"],
     price: 420,
@@ -435,7 +435,7 @@ export const subscriptionPlans: SubscriptionPlan[] = [
   },
   {
     id: "sub-monthly",
-    name: "باقة الجذور الشهرية",
+    name: "باقة مِذواق الشهرية",
     frequency: "شهري",
     price: 149,
     originalPrice: 180,
@@ -526,3 +526,4 @@ export const allOccasions: Product["occasions"][number][] = [
   "هدايا شركات",
   "مولود جديد",
 ];
+

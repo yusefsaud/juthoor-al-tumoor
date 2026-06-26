@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import { Check, ShoppingBag, PackageOpen } from "lucide-react";
@@ -200,3 +200,4 @@ function StepLabel({ number, title }: { number: number; title: string }) {
     </div>
   );
 }
+

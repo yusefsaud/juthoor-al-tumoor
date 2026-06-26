@@ -1,11 +1,11 @@
-import { Container } from "@/components/ui/Container";
+﻿import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ProductsExplorer } from "@/components/products/ProductsExplorer";
 import { products, allVarieties } from "@/data/products";
 import { DateVariety } from "@/data/types";
 
 export const metadata = {
-  title: "المنتجات | جذور التمور",
+  title: "المنتجات | مِذواق",
 };
 
 export default function ProductsPage({
@@ -33,3 +33,4 @@ export default function ProductsPage({
     </div>
   );
 }
+

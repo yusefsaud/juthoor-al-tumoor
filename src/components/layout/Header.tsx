@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -32,8 +32,8 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <DateClusterMark className="h-9 w-9 text-gold-500" strokeWidth={1.6} />
           <div className="flex flex-col leading-tight">
-            <span className="font-display text-lg font-bold text-espresso-800">جذور التمور</span>
-            <span className="text-[11px] tracking-wide text-gold-600">ROOTS OF DATES</span>
+            <span className="font-display text-lg font-bold text-espresso-800">مِذواق</span>
+            <span className="text-[11px] tracking-wide text-gold-600">MITHWAQ DATES</span>
           </div>
         </Link>
 
@@ -104,7 +104,7 @@ export function Header() {
           <div className="mb-8 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <DateClusterMark className="h-7 w-7 text-gold-500" />
-              <span className="font-display text-base font-bold text-espresso-800">جذور التمور</span>
+              <span className="font-display text-base font-bold text-espresso-800">مِذواق</span>
             </div>
             <button onClick={() => setOpen(false)} aria-label="إغلاق">
               <X size={22} className="text-espresso-600" />
@@ -134,3 +134,4 @@ export function Header() {
     </header>
   );
 }
+

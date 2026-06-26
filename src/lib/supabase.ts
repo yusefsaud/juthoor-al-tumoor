@@ -1,4 +1,4 @@
-/**
+﻿/**
  * طبقة الربط مع Supabase — غير مفعّلة في مرحلة MVP.
  *
  * خطوات التفعيل لاحقًا:
@@ -23,3 +23,4 @@
 // export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export const SUPABASE_READY = false;
+

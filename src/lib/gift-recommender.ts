@@ -1,4 +1,4 @@
-import { Product } from "@/data/types";
+﻿import { Product } from "@/data/types";
 import { products } from "@/data/products";
 
 /**
@@ -93,3 +93,4 @@ function buildReason(product: Product, input: GiftAssistantInput): string {
   parts.push(`بتغليف ${product.packaging}`);
   return parts.join(" • ");
 }
+

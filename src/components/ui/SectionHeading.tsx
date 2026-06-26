@@ -1,4 +1,4 @@
-interface SectionHeadingProps {
+﻿interface SectionHeadingProps {
   eyebrow?: string;
   title: string;
   description?: string;
@@ -39,3 +39,4 @@ export function SectionHeading({
     </div>
   );
 }
+

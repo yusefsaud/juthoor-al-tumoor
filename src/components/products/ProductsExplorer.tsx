@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
@@ -105,3 +105,4 @@ export function ProductsExplorer({
     </div>
   );
 }
+

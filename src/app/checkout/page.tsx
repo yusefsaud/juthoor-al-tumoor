@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Suspense } from "react";
 import Link from "next/link";
@@ -25,7 +25,7 @@ function CheckoutContent() {
           تم استلام طلبك بنجاح 🌴
         </h1>
         <p className="mt-2 text-sm text-espresso-500">
-          سنتواصل معك قريبًا لتأكيد تفاصيل التوصيل. شكرًا لاختيارك جذور التمور.
+          سنتواصل معك قريبًا لتأكيد تفاصيل التوصيل. شكرًا لاختيارك مِذواق.
         </p>
         <Link href="/products" className="btn-gold mt-6 inline-flex">
           استمر بالتسوّق
@@ -77,3 +77,4 @@ export default function CheckoutPage() {
     </Suspense>
   );
 }
+

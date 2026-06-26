@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import { CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { ProductVisual } from "@/components/ui/DateClusterMark";
@@ -16,7 +16,7 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const product = getProductBySlug(params.slug);
-  return { title: product ? `${product.name} | جذور التمور` : "المنتج غير موجود" };
+  return { title: product ? `${product.name} | مِذواق` : "المنتج غير موجود" };
 }
 
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {

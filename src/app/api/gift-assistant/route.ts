@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { recommendGifts, GiftAssistantInput } from "@/lib/gift-recommender";
 
 /**
@@ -48,3 +48,4 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "حدث خطأ غير متوقع" }, { status: 500 });
   }
 }
+

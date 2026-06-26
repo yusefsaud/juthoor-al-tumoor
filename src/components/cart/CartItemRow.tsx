@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { Minus, Plus, Trash2 } from "lucide-react";
@@ -76,3 +76,4 @@ export function CartItemRow({
     </div>
   );
 }
+

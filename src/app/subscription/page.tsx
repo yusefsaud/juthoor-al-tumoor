@@ -1,4 +1,4 @@
-import { RefreshCw, PauseCircle, Truck } from "lucide-react";
+﻿import { RefreshCw, PauseCircle, Truck } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PlanCard } from "@/components/subscription/PlanCard";
@@ -11,7 +11,7 @@ const features = [
 ];
 
 export const metadata = {
-  title: "الاشتراك الشهري | جذور التمور",
+  title: "الاشتراك الشهري | مِذواق",
 };
 
 export default function SubscriptionPage() {
@@ -47,3 +47,4 @@ export default function SubscriptionPage() {
     </div>
   );
 }
+

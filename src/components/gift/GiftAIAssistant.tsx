@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { Sparkles, ArrowRight, ArrowLeft, RotateCcw, Plus, Check } from "lucide-react";
@@ -281,3 +281,4 @@ function OptionPill({
     </button>
   );
 }
+

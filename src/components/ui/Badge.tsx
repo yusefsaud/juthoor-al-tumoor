@@ -1,4 +1,4 @@
-import { ProductBadge } from "@/data/types";
+﻿import { ProductBadge } from "@/data/types";
 
 const badgeStyles: Record<ProductBadge, string> = {
   "الأكثر طلباً": "bg-espresso-800 text-sand-100",
@@ -17,3 +17,4 @@ export function ProductBadgePill({ badge }: { badge: ProductBadge }) {
     </span>
   );
 }
+

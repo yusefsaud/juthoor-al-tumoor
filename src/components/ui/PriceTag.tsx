@@ -1,4 +1,4 @@
-import { formatPrice, calcDiscountPercent } from "@/lib/utils";
+﻿import { formatPrice, calcDiscountPercent } from "@/lib/utils";
 
 export function PriceTag({
   price,
@@ -34,3 +34,4 @@ export function PriceTag({
     </div>
   );
 }
+

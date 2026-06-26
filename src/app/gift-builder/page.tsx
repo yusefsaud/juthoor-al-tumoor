@@ -1,10 +1,10 @@
-import { Container } from "@/components/ui/Container";
+﻿import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GiftAIAssistant } from "@/components/gift/GiftAIAssistant";
 import { GiftBoxBuilder } from "@/components/gift/GiftBoxBuilder";
 
 export const metadata = {
-  title: "صمّم هديتك | جذور التمور",
+  title: "صمّم هديتك | مِذواق",
 };
 
 export default function GiftBuilderPage() {
@@ -40,3 +40,4 @@ export default function GiftBuilderPage() {
     </div>
   );
 }
+

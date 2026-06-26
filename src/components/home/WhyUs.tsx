@@ -1,4 +1,4 @@
-import { Leaf, PackageCheck, Gift, Truck } from "lucide-react";
+﻿import { Leaf, PackageCheck, Gift, Truck } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -29,7 +29,7 @@ export function WhyUs() {
   return (
     <section className="py-16 sm:py-20">
       <Container>
-        <SectionHeading eyebrow="لماذا جذور التمور" title="فخامة تبدأ من الجذور" />
+        <SectionHeading eyebrow="لماذا مِذواق" title="جودة تبدأ من الاختيار" />
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {points.map((point) => (
             <div
@@ -50,3 +50,4 @@ export function WhyUs() {
     </section>
   );
 }
+

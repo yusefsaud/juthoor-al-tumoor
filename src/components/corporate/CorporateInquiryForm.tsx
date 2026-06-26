@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, FormEvent } from "react";
 import { Send } from "lucide-react";
@@ -99,3 +99,4 @@ export function CorporateInquiryForm() {
     </form>
   );
 }
+

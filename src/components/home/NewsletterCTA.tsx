@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, FormEvent } from "react";
 import Link from "next/link";
@@ -20,7 +20,7 @@ export function NewsletterCTA() {
       <Container className="flex flex-col items-center justify-between gap-6 text-center lg:flex-row lg:text-right">
         <div>
           <h3 className="font-display text-xl font-bold text-espresso-800">
-            انضم لنشرة جذور التمور
+            انضم لنشرة مِذواق
           </h3>
           <p className="mt-1 text-sm text-espresso-500">
             عروض خاصة، إصدارات محدودة، وأفكار هدايا تصل إلى بريدك أولًا.
@@ -63,3 +63,4 @@ export function NewsletterCTA() {
     </section>
   );
 }
+

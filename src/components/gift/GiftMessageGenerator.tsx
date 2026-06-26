@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { Copy, Check, Wand2 } from "lucide-react";
@@ -108,3 +108,4 @@ export function GiftMessageGenerator({
     </div>
   );
 }
+
