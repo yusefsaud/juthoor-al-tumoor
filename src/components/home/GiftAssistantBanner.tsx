@@ -16,7 +16,7 @@ export function GiftAssistantBanner() {
                 مساعد الهدايا الذكي
               </span>
               <h3 className="mt-3 font-display text-2xl font-bold text-espresso-800 sm:text-3xl">
-                لا تعرف ماذا تختار؟ دع مساعدنا يقترح عليك الهدية المثالية
+                محتار أي تمر يناسبك؟ دع مِذواق يساعدك تختار الأنسب
               </h3>
               <p className="mt-3 text-sm leading-7 text-espresso-500">
                 أجب عن أربعة أسئلة سريعة عن المناسبة والميزانية والشخص المُهدى إليه،
