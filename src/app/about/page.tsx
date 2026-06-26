@@ -16,8 +16,8 @@ const values = [
   },
   {
     icon: Heart,
-    title: "الهدية كخبرة، لا سلعة",
-    text: "نُصمم التغليف والتفاصيل لتكون لحظة فتح الصندوق جزءًا من الهدية نفسها.",
+    title: "التمر كاختيار يومي وفاخر",
+    text: "نقدّم التمر كمنتج يومي للضيافة والقهوة والمائدة، مع تغليف أنيق يصلح للاستخدام الشخصي أو الإهداء.",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function AboutPage() {
 
       <section className="bg-sand-200/40 py-16">
         <Container>
-          <SectionHeading eyebrow="رحلة التمرة" title="من المزرعة إلى صندوقك" />
+          <SectionHeading eyebrow="رحلة التمرة" title="من المزرعة إلى مائدتك" />
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {journeySteps.map((step, i) => (
               <div key={step.title} className="relative rounded-xl2 border border-gold-200/70 bg-white p-6">
